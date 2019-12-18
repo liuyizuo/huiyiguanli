@@ -1,0 +1,22 @@
+<view class="cpn_heod">
+  <image src="../../img/banner_pic_02.png"></image>
+</view>
+<view class="con_inp">
+  <image src="../../img/search_icon_04.png"></image>
+  <input bindinput="iptname" value="搜索会议" class='username'></input>
+</view>
+<view class="con_div">
+  <view class="con_li" bindtap="Jump">
+    <image src="../../img/sign_icon_04.png"></image>
+    <view>会议签到</view>
+  </view>
+  <view class="con_li">
+    <image src="../../img/establish_icon_06.png"></image>
+    <view>会议创建</view>
+  </view>
+  <!-- <view class="con_li" ><image src="../../img/icon_01_03.png"></image><view>会议创建</view></view>
+  <view class="con_li" ><image src="../../img/icon_02_07.png"></image><view>会议创建</view></view>
+    <view class="con_li" ><image src="../../img/icon_03_09.png"></image><view>会议创建</view></view>
+  <view class="con_li" ><image src="../../img/icon_04_11.png"></image><view>会议创建</view></view> -->
+
+</view>

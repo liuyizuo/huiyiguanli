@@ -1,0 +1,122 @@
+
+.div_main{
+  width: 100%;
+  background: #f0f5fa;
+  padding-top: 1rem;
+}
+.div_back{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+    width: 100%;
+  background: #f0f5fa;
+  z-index: -1
+}
+.div_Details{
+  width: 95vw;
+   margin: 0 auto;
+   background: white;
+   margin-bottom: 0.7rem;
+    border-radius:15px;
+
+  }
+  .div_Detailss{
+  width: 95vw;
+   margin: 0 auto;
+   background: white;
+   margin-bottom: 0.7rem;
+    border-radius:15px;
+
+  }
+  .text_meeting{
+    color: #797979
+  }
+  .text_name{
+     color: #141414
+  }
+  .flex-wrp-row {
+  display: flex;
+  flex-direction: row;
+}
+ 
+.item {
+ padding-top: 20rpx;
+  padding-left: 20rep;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+ 
+.item-left {
+   flex: 1; /* 重要 */
+   align-items:center;
+   font-size: 20px;
+   color: #797979
+}
+ 
+.item-right {
+  position: relative;
+  align-items:center;
+  font-size: 20px;
+  color: #141414
+}
+.con_map{
+   width: 90vw;
+   margin: 0 auto;
+   height: 20vh;
+   background: white;
+   margin-bottom: 0.7rem;
+}
+ 
+.div_Details view{
+   font-size: 16px;
+   color: #797979;
+   text-align: center;
+}
+.div_Detailss view{
+   font-size: 16px;
+   color: #141414;
+   text-align: center;
+}
+.yangshi_0{
+ width: 3rem;
+ text-align:center;
+align-items:center;
+justify-content: center;
+margin: auto; 
+margin-left: 0.5rem;
+}
+.yangshi_1{
+  width: 4rem;
+  text-align:center;
+align-items:center;
+justify-content: center;
+margin: auto; 
+}
+.yangshi_2{
+  text-align:center;
+align-items:center;
+justify-content: center;
+margin: auto; 
+   width: 8rem;
+   margin-left: 0.5rem
+}
+.yangshi_4{
+    text-align:center;
+align-items:center;
+justify-content: center;
+margin: auto; 
+   width: 8rem;
+}
+.con_Check{
+  width: 75vw;
+  height: 3rem;
+  font-size: 20px;
+  margin: 0 auto;
+   margin-top: 5rem;
+   margin-bottom: 3rem;
+    text-align: center;
+    line-height:  3rem;
+    color: white;
+ background: linear-gradient(to right, #0e82d7, #4261e1
+);
+}

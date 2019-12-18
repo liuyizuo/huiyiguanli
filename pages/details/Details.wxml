@@ -1,0 +1,60 @@
+<view class="div_main">
+  <view class="div_Details">
+    <view class='flex-wrp-row item'>
+      <view class='item-left flex-wrp-row'>
+        <text class='text'>姓名</text>
+      </view>
+      <view class='item-right flex-wrp-row'>
+        <input bindinput="iptnamu" value="{{iptnamu}}"></input>
+      </view>
+    </view>
+  </view>
+  <view class="div_Details">
+    <view class='flex-wrp-row item'>
+      <view class='item-left flex-wrp-row'>
+        <text class='text'>电话</text>
+      </view>
+      <view class='item-right flex-wrp-row'>
+        <input bindinput="iptphone" value="{{iptphone}}"></input>
+      </view>
+    </view>
+  </view>
+  <view class="div_Details" bindtap="click_set">
+    <view class='flex-wrp-row item'>
+      <view class='item-left flex-wrp-row'>
+        <text class='text'>性别</text>
+      </view>
+      <view class='item-right flex-wrp-row'>
+        <image class="item-img" src="../../img/6626.png"></image>
+        <text>{{iptSex}}</text>
+        <!-- <input bindinput="iptSex"></input> -->
+      </view>
+    </view>
+  </view>
+  <view class="xiala" style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'>
+    <view class="item_man" bindtap="click_man">男</view>
+    <view bindtap="click_wumne">女</view>
+  </view>
+  <view class="div_Details arrll">
+    <view class='flex-wrp-row item'>
+      <view class='item-left flex-wrp-row'>
+        <text class='text'>所在单位</text>
+      </view>
+      <view class='item-right flex-wrp-row'>
+        <input bindinput="iptunit" value="{{iptunit}}"></input>
+      </view>
+    </view>
+  </view>
+  <view class="div_Details">
+    <view class='flex-wrp-row item'>
+      <view class='item-left flex-wrp-row'>
+        <text class='text'>职务</text>
+      </view>
+      <view class='item-right flex-wrp-row'>
+        <input bindinput="iptPosition" value="{{iptPosition}}"></input>
+      </view>
+    </view>
+  </view>
+
+  <view class="con_Check" bindtap="click_baocun">保存</view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/img/img",
+    "pages/index/index",
+    "pages/details/Details",
+    "pages/taiozhuan/tiaozhuan",
+      "pages/huiyi/huiyi",
+    "pages/mide/mede"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#386df4",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "会 议",
+        "iconPath": "./img/home_icon_16.png",
+        "selectedIconPath": "./img/home_icon_03.png"
+      },
+      {
+        "pagePath": "pages/mide/mede",
+        "text": "我 的",
+        "iconPath": "./img/me_icon_05.png",
+        "selectedIconPath": "./img/me_sel_icon_18.png"
+      }
+    ]
+  },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于获取实时位置"
+      }
+    },
+  "sitemapLocation": "sitemap.json"
+}

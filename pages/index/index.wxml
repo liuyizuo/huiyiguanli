@@ -1,0 +1,97 @@
+<view class="arr">
+  <view class="div_heod">
+    <image src="../../img/banner_pic_02.png"></image>
+  </view>
+  <view class="con_biaoti">{{meetingNamu}}</view>
+  <view class="biaozhu">
+    <view class='flex-wrp-rows items'>
+      <view class='item-lefts flex-wrp-rows'>
+        <text class='text'>{{meetingMap}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="qiandao" bindtap="click_Check">签</view>
+  <view></view>
+  <view class="div_main">
+    <view class="div_Details">
+      <view class='flex-wrp-row item'>
+        <view class='item-left flex-wrp-row'>
+          <text class='text'>会议名称</text>
+        </view>
+        <view class='item-right flex-wrp-row item_widh '>
+          <text class='text'>{{meetingNamu}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="div_Details">
+      <view class='flex-wrp-row item'>
+        <view class='item-left flex-wrp-row'>
+          <text class='text'>会议时间</text>
+        </view>
+        <view class='item-right flex-wrp-row'>
+          <text class='text'>{{meetingTime}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="div_Details">
+      <view class='flex-wrp-row item'>
+        <view class='item-left flex-wrp-row'>
+          <text class='text'>结束时间</text>
+        </view>
+        <view class='item-right flex-wrp-row'>
+          <text class='text'>{{endTime}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="div_Details">
+      <view class='flex-wrp-row item'>
+        <view class='item-left flex-wrp-row'>
+          <text class='text'>会议地点</text>
+        </view>
+        <view class='item-right flex-wrp-row item_widh'>
+          <text class='text'>{{meetingMap}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="WViewRow1" bindtap="zhankai" style=" -webkit-line-clamp: {{hang}};"> 会 议 简 介：{{meetingDetails}}</view>
+  <view class="div_jian">
+    <view class="con_meetingIntro">
+      <view>
+        <text class="text_meeting">会议联系人 ：</text>
+        <text class="text_name">{{meetingContact}}</text>
+      </view>
+    </view>
+    <view class="con_meetingIntro">
+      <view>
+        <text class="text_meeting">联系人电话 ：</text>
+        <text class="text_name">{{meetingphone}}</text>
+      </view>
+    </view>
+    <view class="con_meetingIntro">
+      <view class="img_rens" bindtap="chakan">
+        <text class="text_meetings">参 会 人 员 ：</text>
+        <view class="img_ren">
+          <image src="../../img/person_icon_03.png"></image>
+        </view>
+      </view>
+    </view>'
+    <view class="con_img" bindtap="erweima">
+      <image src="{{Img}}"></image>
+      <view>
+        <text>会议二维码</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="div_dibu">
+    <!-- <view class="con_Check" bindtap="click_Check">签 到</view> -->
+  </view>
+  <view class="con_map">
+    <map id="map" markers="{{markers}}" longitude="{{longitude}}" latitude="{{latitude}}" show-location scale="17">
+      <cover-view>
+        <cover-image class="mapimg" bindtap="a1" src="../../img/112.png"></cover-image>
+      </cover-view>
+    </map>
+  </view>
+</view>

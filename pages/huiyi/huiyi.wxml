@@ -1,0 +1,69 @@
+<view class="con_hoed">
+  <view class="con_inp">
+    <image bindtap="iptval" src="../../img/search_p_icon_06.png"></image>
+    <input bindinput="iptname" value="{{inpval}}" placeholder="请输入会议名称" class='username'></input>
+  </view>
+  <image class="con_img" bindtap="submit" src="../../img/datez_icon_03.png"></image>
+</view>
+<view class="div_main">
+  <view class="div_Details">
+    <view class='flex-wrp-row item'>
+      <view class='yangshi_0'>
+        <text class='text'>序号</text>
+      </view>
+      <view class='yangshi_1'>
+        <text class='text'>会议名称</text>
+      </view>
+      <view class='yangshi_3'>
+        <text class='text'>会议状态</text>
+      </view>
+    </view>
+  </view>
+  <view class="div_Detailss" bindtap="xiang_qing" data-index='{{index}}' wx:for="{{arr}}" key="index">
+    <view class='flex-wrp-row item'>
+      <view class='yangshi_0'>
+        <text class='text'>{{index+1}}</text>
+      </view>
+      <view class='yangshi_1' style='{{key==index?"color:#386df4;":""}}'>
+        <text class='text'>{{item.MeetingName}}</text>
+      </view>
+      <view class='yangshi_3'>
+        <text style=" color:{{item.color}}" class='text'>{{item.type}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="time_text">请选择初始日期</view>
+  <picker-view wx:if="{{years.length>0 && months.length>0 && days.length>0}}" style="width: 100%; height: 500rpx;" indicator-style="height: 50px;" class="view_picker" value="{{value}}" bindchange="bindChange">
+    <picker-view-column style='margin-left: 20rpx;'>
+      <view wx:for="{{years}}" class="view_picker_text" wx:key="{{index}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" class="view_picker_text" wx:key="{{index}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column style='margin-right: 20rpx;'>
+      <view wx:for="{{days}}" class="view_picker_text" wx:key="{{index}}">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+
+  <button style='width:100%;color:blue;' bindtap="go">继续</button>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModals}}"></view>
+<view class="modalDlg" wx:if="{{showModals}}">
+  <view class="time_text">请选择结束日期</view>
+  <picker-view wx:if="{{years.length>0 && months.length>0 && days.length>0}}" style="width: 100%; height: 500rpx;" indicator-style="height: 50px;" class="view_picker" value="{{value}}" bindchange="bindChange">
+    <picker-view-column style='margin-left: 20rpx;'>
+      <view wx:for="{{years}}" class="view_picker_text" wx:key="{{index}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" class="view_picker_text" wx:key="{{index}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column style='margin-right: 20rpx;'>
+      <view wx:for="{{days}}" class="view_picker_text" wx:key="{{index}}">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+
+  <button style='width:100%;color:blue;' bindtap="gos">确定</button>
+</view>

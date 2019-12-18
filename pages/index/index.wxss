@@ -1,0 +1,232 @@
+.div_heod{
+  width: 100%;
+  height: 28vh
+}
+.arr{
+  width: 100vw;
+  overflow: hidden;
+}
+.qiandao{
+  position: absolute;
+  right: 30rpx;
+  top: 9.5rem;
+  width: 100rpx;
+  height: 100rpx;
+  background: #1089ED;
+  text-align: center;
+  line-height: 100rpx;
+   border-radius: 50%;
+  border:2px solid white;
+  color: white;
+  font-size: 25px;
+}
+.div_heod image{
+  width: 100%;
+  height: 100%;
+}
+.biaozhu{
+ margin-top: -3.3rem;
+}
+.con_biaoti{
+  position: absolute;
+  top: 3rem;
+  width: 80vw;
+  left: 50%;
+  height: 5rem;
+  margin-left: -40vw;
+   font-size: 30px;
+   color: white;
+   font-weight: 900;
+   text-align: center;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+.item_widh{
+  width: 60vw;
+position: absolute;
+right: 0;
+}
+.item_widh text{
+  position: absolute;
+right: 0;
+}
+ .flex-wrp-rows {
+  display: flex;
+  flex-direction: row;
+}
+ 
+.items {
+  padding: 30rpx;
+  position: relative;
+}
+ 
+.item-lefts {
+   flex: 1; /* 重要 */
+   align-items:center;
+   font-size: 16px;
+  color: white;
+}
+ 
+.item-rights {
+  position: relative;
+  align-items:center;
+  font-size: 16px;
+  color: white;
+  margin-right: 5rpx
+}
+
+
+
+.div_main{
+  width: 100%;
+  background: #f0f5fa;
+  padding-top: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+.div_Details{
+  width: 95vw;
+   margin: 0 auto;
+   background: white;
+   margin-bottom: 0.5rem;
+   border-radius: 3vw;
+
+  }
+  .text_meetings{
+    color: #797979;
+    display: flex;
+  }
+  .text_meeting{
+    color: #797979
+  }
+  .text_name{
+     color: #141414
+  }
+  .flex-wrp-row {
+  display: flex;
+  flex-direction: row;
+}
+ 
+.item {
+  padding: 30rpx;
+  position: relative;
+}
+ 
+.item-left {
+   flex: 1; /* 重要 */
+   align-items:center;
+   font-size: 14px;
+   color: #797979
+}
+ 
+.item-right {
+  position: relative;
+  align-items:center;
+  font-size: 14px;
+  color: #141414;
+  margin-right: 5rpx
+}
+.con_map{
+   width: 95vw;
+   margin: 0 auto;
+   height: 30vh;
+   background: white;
+   margin-bottom: 0.5rem;
+  
+}
+#map{
+  width: 100%;
+  height: 100%;
+}
+.WViewRow1{
+  font-size: 14px;
+  width: 95vw;
+  margin:0 auto;
+  margin-top: 1rem;
+  display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+.con_meetingIntro{
+  font-size: 14px;
+  width: 95vw;
+  margin:0 auto;
+  margin-top: 1rem;
+}
+.con_meetingIntros{
+  font-size: 14px;
+  width: 95vw;
+  margin:0 auto;
+  margin-top: 1rem;
+  display: flex;
+}
+.con_meet{
+  display: block;
+   font-size: 15px;
+  width: 95vw;
+  margin:0 auto;
+  margin-top: 1rem;
+  color: black
+}
+.con_meetingIntro image{
+  width: 1rem;
+  height: 1rem
+}
+.con_meetingIntros image{
+  width: 1rem;
+  height: 1rem
+}
+.con_Check{
+     border-radius: 2vw;
+  width: 75vw;
+  height: 3rem;
+  font-size: 16px;
+  margin: 0 auto;
+   margin-top: 4rem;
+   margin-bottom: 3rem;
+    text-align: center;
+    line-height:  3rem;
+    color: white;
+ background: linear-gradient(to right, #0e82d7, #4261e1
+);
+}
+.con_img {
+position: relative;
+left: 37%;
+top: -7.2rem;
+text-align: center;
+font-size: 14px;
+
+}
+.con_img image{
+  width: 4rem;
+  height: 4rem
+}
+.div_jian{
+  height: 6rem;
+}
+.div_dibu{
+  height: 0.7rem;
+}
+.mapimg{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width:60rpx;
+  height: 60rpx;
+}
+.img_ren{
+  margin-top: -10rpx;
+  width: 70rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-top: 12rpx;
+  text-align: center;
+  border: 1px solid #4261e1
+}
+.img_rens{
+  display: flex;
+}

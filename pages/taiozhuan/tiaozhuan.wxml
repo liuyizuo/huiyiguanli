@@ -1,0 +1,35 @@
+<view class="div_back"></view>
+<view class="div_main">
+  <view class="div_Details">
+    <view class='flex-wrp-row item'>
+      <view class='yangshi_0'>
+        <text class='text'>序号</text>
+      </view>
+      <view class='yangshi_1'>
+        <text class='text'>姓名</text>
+      </view>
+      <view class='yangshi_2'>
+        <text class='text'>单位</text>
+      </view>
+      <view class='yangshi_4'>
+        <text class='text'>签到时间</text>
+      </view>
+    </view>
+  </view>
+  <view class="div_Detailss" data-index='{{index}}' wx:for="{{arr}}" key="index">
+    <view class='flex-wrp-row item'>
+      <view class='yangshi_0'>
+        <text class='text'>{{index+1}}</text>
+      </view>
+      <view class='yangshi_1'>
+        <text class='text'>{{item.Name}}</text>
+      </view>
+      <view class='yangshi_2'>
+        <text class='text'>{{item.Unit}}</text>
+      </view>
+      <view class='yangshi_4'>
+        <text class='text'>{{item.CheckTime}}</text>
+      </view>
+    </view>
+  </view>
+</view>
